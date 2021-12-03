@@ -17,7 +17,7 @@ The aim is to explore http://madry-lab.ml/ robustness package.
 **Respository Structure**
 The following repository is organized as such
 * This readme file (markdown file) 
-* Two main folders: Robustness and Jupyter Notebooks. The former encompasses all the changes to Robustness library to make it work for the three datasets. The second includes all the Notebook and python files needed to generate results specific to our project. 
+* Two main folders: Robustness and Jupyter Notebooks. The former encompasses all the changes to Robustness library to make it work for the three datasets. those files have to be copied into the conda/python robustness library location.  The second includes all the Notebook and python files needed to generate results specific to our project. 
 * Notebooks serve to generate PGD-perturbed examples, PGD-train and standard-train model. Additionally every file is named properly to assist end-users to run them as demos. 
 * Every dataset has the following demo/notebook(ipynb) files: 
   -  A standard-training notebook of a ResNet50 against the natural(original set) named:  (DATASET)STD.ipynb
