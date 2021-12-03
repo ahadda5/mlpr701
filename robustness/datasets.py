@@ -485,8 +485,60 @@ class OpenImages(DataSet):
         if pretrained:
             raise ValueError('OpenImages does not support pytorch_pretrained=True')
         return imagenet_models.__dict__[arch](num_classes=self.num_classes)
-    
-    
+
+class FashionMnist(DataSet):
+    """
+    Fashion-MNIST  dataset consisting of a training set of 60,000 examples
+    and a test set of 10,000 examples.
+
+    More info: https://github.com/zalandoresearch/fashion-mnist
+
+    A dataset with 60k training images and 10k testing images, with the
+    following classes:
+    * T-shirt/top
+    * Trouser
+    * Pullover
+    * Dress
+    * Coat
+    * Sandal
+    * Shirt
+    * Sneaker
+    * Bag
+    * Ankle boot
+
+    """
+    def __init__(self, data_path='/tmp/', **kwargs):
+        """
+        """
+        self.num_classes = 10
+        """if custom_grouping is None:
+            num_classes = 10
+            label_mapping = None 
+        else:
+            num_classes = len(custom_grouping)
+            label_mapping = get_label_mapping("custom_imagenet", custom_grouping)
+        """
+
+        ds_kwargs = {
+            'num_classes': self.num_classes,
+            'mean': ch.tensor([0.4914, 0.4822, 0.4465]),
+            'std': ch.tensor([0.2023, 0.1994, 0.2010]),
+            'custom_class': datasets.FashionMNIST,
+            'label_mapping': None,
+            'transform_train': da.TRAIN_TRANSFORMS_DEFAULT(32),
+            'transform_test': da.TRAIN_TRANSFORMS_DEFAULT(32)
+        }
+        ds_kwargs = self.override_args(ds_kwargs, kwargs)
+        super(FashionMnist, self).__init__('fashionmnist', data_path, **ds_kwargs)
+
+    def get_model(self, arch, pretrained):
+        """ comparable dataset to Cifar
+        """
+        if pretrained:
+            raise ValueError('FashionMnist does not support pytorch_pretrained=True')
+        return cifar_models.__dict__[arch](num_classes=self.num_classes)
+
+
 class Xray(DataSet):
 
     def __init__(self, data_path= '/tmp', **kwargs):
@@ -522,6 +574,7 @@ DATASETS = {
     'a2b': A2B,
     'places365': Places365,
     'openimages': OpenImages,
+    'fashionmnist':FashionMnist,
     'xray':Xray
 }
 '''

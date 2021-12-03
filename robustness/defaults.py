@@ -59,6 +59,12 @@ TRAINING_DEFAULTS = {
         "weight_decay":1e-4,
         "step_lr": 50
     },
+    datasets.FashionMnist: {
+        "epochs": 120,
+        "batch_size":128,
+        "weight_decay":1e-4,
+        "step_lr":50
+    },
     datasets.Xray: {
         "epochs": 200,
         "batch_size":128,
