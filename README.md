@@ -8,12 +8,6 @@ The aim is to explore http://madry-lab.ml/ robustness package.
   * Scikit-learn 
   * Robustness library by Madry https://github.com/MadryLab/robustness 
 
-
-**Team members**
-- Mugariya Farooq
-- Ashraf Haddad
-- Sharim Jamal
-
 **Datasets**
 - FashionMnist: This dataset is an interesting and an upgrade from the original MNIST used by Madry's team. The dataset can be cloned directly GitHub where the images are under data/fashion.  git clone https://github.com/zalandoresearch/fashion-mnist.git
 - CINIC: This is another interesting and an upgrade from the original CIFAR10 used by Madry's team. Download instructions are [here](https://github.com/BayesWatch/cinic-10)
