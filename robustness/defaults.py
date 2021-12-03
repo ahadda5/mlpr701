@@ -59,8 +59,8 @@ TRAINING_DEFAULTS = {
         "weight_decay":1e-4,
         "step_lr": 50
     },
-    datasets.FashionMnist: {
-        "epochs": 120,
+    datasets.Xray: {
+        "epochs": 200,
         "batch_size":128,
         "weight_decay":1e-4,
         "step_lr":50
@@ -193,6 +193,5 @@ def check_and_fill_args(args, arg_list, ds_class):
         elif arg_default is not None: 
             setattr(args, name, arg_default)
     return args
-
 
 
