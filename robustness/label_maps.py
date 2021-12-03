@@ -1,4 +1,5 @@
 CLASS_DICT = {
+          'Xray': { -1: 'noise', 0: 'covid', 1: 'non-covid' },
           'CIFAR': {-1: 'noise', 0: 'airplane', 1: 'automobile', 
                    2: 'bird', 3: 'cat', 4: 'deer', 
                    5: 'dog', 6: 'frog', 7: 'horse', 
@@ -14,18 +15,6 @@ CLASS_DICT = {
                'living_9': {-1: 'noise', 0: 'dog', 1: 'bird', 
                2: 'arthropod', 3: 'reptile', 4: 'primate',                                5: 'fish', 6: 'cat', 7: 'bovid', 8: 'amphibian'}
                             },
-           'FashionMnist':{-1: 'noise',
-                            0: 'T-Shirt',
-                            1: 'Trouser',
-                            2: 'Pullover',
-                            3: 'Dress',
-                            4: 'Coat',
-                            5: 'Sandal',
-                            6: 'Shirt',
-                            7: 'Sneaker',
-                            8: 'Bag',
-                            9: 'Ankle Boot'},
-                        
           # copied from https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a
           'ImageNet': {
                    -1: 'noise',
