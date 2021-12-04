@@ -22,9 +22,9 @@ The following repository is organized as such
 * Every dataset has the following demo/notebook(ipynb) files: 
   -  A standard-training notebook of a ResNet50 against the natural(original set) named:  (DATASET)STD.ipynb
   -  An adv-trained model using the Robustness library  named: Using robustness to ADV train-DATASET.ipynb  (please note that this file is an adaptation of [this](https://github.com/MadryLab/robustness/blob/master/notebooks/Using%20robustness%20as%20a%20library.ipynb) 
-  -  A file to generate adversarial accuracy on a std-trained model name: (DATASET)STD-ADV validation.ipynb
+  -  A file to generate adversarial accuracy on a std-trained model named: (DATASET)STD-ADV validation.ipynb
   -  A file to generate perturbed(PGD-attacked) examples named: (DATASET)Adv Examples pre-trained ADV.ipynb
-  -  A _python_ file to generate a robust dataset(for both Fashion and CINIC) name: (Dataset)STD-RobustDS.py
+  -  A _python_ file to generate a robust dataset(for both Fashion and CINIC) named: (Dataset)STD-RobustDS.py
 
 * FashionMnist and Covid Xray required custom dataloaders. CINIC was already supported by PyTorch. 
 
