@@ -1,0 +1,15 @@
+torchvision
+pandas
+numpy
+scipy
+GPUtil
+dill
+tensorboardX
+tables
+scikit-learn
+seaborn
+cox
+matplotlib
+networkx
+pillow
+tqdm
