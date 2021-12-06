@@ -11,7 +11,7 @@ The aim is to explore http://madry-lab.ml/ robustness package.
 **Datasets**
 - FashionMnist: This dataset is an interesting and an upgrade from the original MNIST used by Madry's team. The dataset can be cloned directly GitHub where the images are under data/fashion.  git clone https://github.com/zalandoresearch/fashion-mnist.git
 - CINIC: This is another interesting and an upgrade from the original CIFAR10 used by Madry's team. Download instructions are [here](https://github.com/BayesWatch/cinic-10)
-- COVID XRAY
+- COVID XRAY : This dataset can be downloaded from https://github.com/UCSD-AI4H/COVID-CT where the images are under the folder name : Images-processed as CT_COVID.zip and CT_NonCOVID.zip
 
 
 **Respository Structure**
